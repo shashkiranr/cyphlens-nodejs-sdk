@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "lib": [
+      "ES2022"
+    ],
+    "declaration": true,
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "target": "ES2022",
+    "module": "esnext",
+    "rootDirs": [
+      "tests",
+      "src"
+    ],
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "importHelpers": true
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": [
+    "placeholder.ts",
+    "src/**/*.ts",
+    "tests/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

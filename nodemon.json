@@ -1,0 +1,13 @@
+{
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git",
+      "node_modules"
+    ],
+    "watch": [
+      "src/**/*"
+    ],
+    "ext": "ts",
+    "exec": "node --no-warnings=ExperimentalWarning --loader ts-node/esm ./src/example.ts"
+}
