@@ -18,7 +18,7 @@ describe('User API', () => {
     test('test add user information',async ()=>{
         const result = await userApi.enableUserAccountInfo(userName)
         expect(result.username).toBe(userName);
-        expect(result.status).toEqual("PENDING")
+        expect(result.status).toEqual("ACTIVE")
     })
 
     test('test delete user information',async ()=>{

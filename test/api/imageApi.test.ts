@@ -31,7 +31,7 @@ describe('Image API', () => {
         expect(result.imageType).toEqual(imageType)
     })
 
-    test('test verify cyphlens image SVG_DECODED',async ()=>{
+    test('test verify cyphlens image SUCCESS',async ()=>{
         const status:VerifyStatus = 'SUCCESS';
         const result = await imageApi.verifyLoginCyphlensImage(userName,'','')
         expect(result.status).toEqual(status);
