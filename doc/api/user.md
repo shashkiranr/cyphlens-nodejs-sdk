@@ -36,7 +36,7 @@ async getUserAccountInfo(username: string): Promise<UserInfo>
 
 ```ts
 try {
-  const result = await userApi.getUserAccountInfo();
+  const result = await userApi.getUserAccountInfo(userName);
   // use response
 } catch (error) {
   // handle error
@@ -64,7 +64,7 @@ async enableUserAccountInfo(username: string): Promise<UserInfo>
 
 ```ts
 try {
-  const result = await userApi.enableUserAccountInfo();
+  const result = await userApi.enableUserAccountInfo(userName);
   // use response
 } catch (error) {
   // handle error
@@ -94,7 +94,7 @@ async deleteUserAccountInfo(username: string): Promise<UserInfo>
 
 ```ts
 try {
-  const result = await userApi.deleteUserAccountInfo();
+  const result = await userApi.deleteUserAccountInfo(userName);
   // use response
 } catch (error) {
   // handle error
