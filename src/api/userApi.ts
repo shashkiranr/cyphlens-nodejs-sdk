@@ -27,9 +27,9 @@ export class UserApi extends BaseApi {
             const result: UserStatus = (function () {
                 switch (type) {
                     case 'get':
-                        return 'ACTIVE';
-                    case 'enable':
                         return 'PENDING';
+                    case 'enable':
+                        return 'ACTIVE';
                     case 'delete':
                     default:
                         return 'INACTIVE';
